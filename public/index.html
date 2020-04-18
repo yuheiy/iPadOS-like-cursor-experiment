@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>iPadOS like cursor experiment</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+
+      html {
+        font-family: system-ui;
+        line-height: 1.5;
+      }
+
+      body {
+        margin: 0;
+        color: #333;
+      }
+
+      .content {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 2rem;
+      }
+
+      p {
+        margin-top: 1rem;
+        margin-bottom: 0;
+      }
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.5rem 0.75rem;
+        text-decoration: none;
+        color: #0070c9;
+      }
+
+      a svg {
+        width: auto;
+        height: 0.75rem;
+        margin-left: 0.25rem;
+        margin-right: -0.2rem;
+        transform: translateY(0.075rem);
+        fill: currentcolor;
+      }
+
+      * {
+        cursor: none;
+      }
+    </style>
+    <script type="module">
+      import App from "/dist/App.js";
+
+      new App({ target: document.body });
+    </script>
+  </head>
+
+  <body>
+    <div class="content">
+      <div>
+        <h1>iPadOS like cursor experiment</h1>
+
+        <p>
+          <a href="https://www.apple.com/ipados/">
+            Learn more
+            <svg viewBox="0 0 24 24">
+              <path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z" />
+            </svg>
+          </a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
